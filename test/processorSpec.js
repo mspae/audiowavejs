@@ -1,5 +1,4 @@
 import { expect } from 'chai';
-import sinon from 'sinon';
 import processor from '../src/processor.js';
 import fs from 'fs';
 
@@ -22,7 +21,7 @@ describe('Processor:', () => {
     }).catch(err => {
       console.error(err);
       done();
-    })
+    });
   });
 
   it('Output of processor resembles audiowaveform output', () => {
